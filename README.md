@@ -1,14 +1,35 @@
-# sleimok
+## Sleimok
+### What
+Finds duplicate files by recursively walking through directories, MD5 hashing files and comparing the hashes Logs found files in a .json list, 
+prints it and gives a (very) brief report<br>
+Asks for delete confirmation independent of passed option
 
- Finds duplicate files by recursively walking through directories, hashing files and comparing the MD5 sums. <br/> Then logs results in a .json file.
+### Setup
+Downlad repository and unpack it<br>
+`npm install` in root directory<br>
 
-Usage: findDuplicateFiles [options] [path]
+### Usage
+Options:	
+  
+        --version  Show version number                                    [boolean]
+    -p, --path     Path of directory to be scanned or previously saved .json list
+                                                                           [string]  
+    -l, --load     Loads a previously saved .json list passed via --path and
+                   prints a brief report                                  [boolean]
+    -s, --scan     Scans passed directory, prints a brief report and logs files as
+	               .json file in current working directory                [boolean]
+    -h, --help     Show help                                              [boolean]
 
-Options:                  
--h || -help &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Display help.<br/>
--l || -load &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Loads a .json log file and deletes its given duplicate files.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									[path] must be a previously saved file list.<br/>
--r || -remove &nbsp;&nbsp;&nbsp;&nbsp; 
-									Removes all duplicate files found immidiately without saving a duplicate file list.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  [path] must be a valid directory.<br/>&nbsp;&nbsp;
+### NPM dependencies
+`md5-file`<br>
+`walkdir`<br>
+`yargs`<br>
+
+### Future updates
+More options<br>
+GUI(probably never)<br>
+Option to choose individual files to keep/delete<br>
+Better (actual) stats<br>
+- overhaul report<br>
+
+
