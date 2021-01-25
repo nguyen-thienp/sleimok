@@ -30,6 +30,6 @@ More options<br>
 GUI(probably never)<br>
 Option to choose individual files to keep/delete<br>
 Better (actual) stats<br>
-- overhaul report<br>
+-overhaul report<br>
 
 
