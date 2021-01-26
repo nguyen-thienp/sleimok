@@ -1,7 +1,7 @@
 ## Sleimok
 ### What
-Finds duplicate files by recursively walking through directories, MD5 hashing files and comparing the hashes Logs found files in a .json list, 
-prints it and gives a (very) brief report<br>
+Finds duplicate files by recursively walking through directories, MD5 hashing files and comparing the hashes<br>
+Logs found files in a .json list, prints it and gives a (very) brief report<br>
 Asks for delete confirmation independent of passed option
 
 ### Setup
